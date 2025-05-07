@@ -17,3 +17,17 @@ platforms = ["linux-64"]
 github_actions_test = { path = ".", editable = true }
 
 [tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+python = ">=3.13.3,<3.14"
+
+[tool.pixi.feature.dev.dependencies]
+pytest = "*"
+sphinx = "*"
+ruff = "*"
+
+[tool.pixi.feature.dev.tasks]
+test = "pytest"
+
+[tool.pixi.environments]
+dev = ["dev"]
