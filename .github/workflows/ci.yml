@@ -5,9 +5,8 @@ name: Python application
 
 on:
   push:
-    branches: [ "master" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "main" ]
 
 permissions:
   contents: read
@@ -24,6 +23,6 @@ jobs:
       with:
         environments: dev
         activate-environment: true
-    - run: which python | grep '.pixi/envs/py311/bin/python'
-    - run: |
+    - name: Run tests
+      run: |
         test
