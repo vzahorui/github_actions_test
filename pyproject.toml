@@ -31,3 +31,6 @@ test = "pytest"
 
 [tool.pixi.environments]
 dev = ["dev"]
+
+[tool.ruff]
+line-length = 79
