@@ -1,2 +1,2 @@
 def fun(a:int):
-    return a+4
+    return a+3
