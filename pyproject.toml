@@ -31,7 +31,3 @@ test = "pytest"
 
 [tool.pixi.environments]
 dev = ["dev"]
-
-[tool.ruff]
-# Set the maximum line length to 79.
-line-length = 79
