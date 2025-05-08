@@ -25,4 +25,4 @@ jobs:
         activate-environment: true
     - name: Run tests
       run: |
-        test
+        python app.py
