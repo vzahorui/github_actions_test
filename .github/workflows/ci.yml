@@ -24,5 +24,8 @@ jobs:
         environments: dev
         activate-environment: true
     - name: Run tests
-      run: |
-        pytest
+      run: pytest
+    - name: Run Ruff linter on source files
+      run: ruff check --output-format=github ./src
+    - name: Run Ruff linter on test files
+      run: ruff check --output-format=github ./tests
