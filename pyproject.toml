@@ -25,6 +25,7 @@ python = ">=3.13.3,<3.14"
 pytest = "*"
 sphinx = "*"
 ruff = "*"
+pre-commit = "*"
 
 [tool.pixi.feature.dev.tasks]
 test = "pytest"
